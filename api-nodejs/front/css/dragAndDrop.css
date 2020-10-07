@@ -1,0 +1,16 @@
+/* .dropzone{
+    min-height: 150px;
+    border: 2px dashed #4e73df;
+    background: #edf6ff;
+    padding: 20px 20px;
+}
+.dropzone:hover{
+    min-height: 150px;
+    border: 2px dashed #4e73df;
+    background: #f4f9ff;
+    padding: 20px 20px;
+} */
+
+.pdfobject-container { height: 500px;}
+
+.pdfobject { border: 1px solid #666; }

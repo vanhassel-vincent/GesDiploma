@@ -1,0 +1,82 @@
+<html>
+
+<head>
+    <title>Ges Diploma</title>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.js" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <script src="./js/papaparse.min.js"></script>
+    <link rel="stylesheet" href="./css/dragAndDrop.css">
+    <link rel="shortcut icon" type="image/ico" href="./images/image.ico" />
+    <link href="./css/main.css" rel="stylesheet">
+    <script src="./js/admin.js"></script>
+    <script src="https://kit.fontawesome.com/f962f21468.js"></script>
+
+
+</head>
+
+<body>
+    <div id="wrapper">
+
+    </div>
+     <div class="row">
+        <div class="col-xl-12 col-lg-12" >
+            <br>
+            <a href="/"><button type="button" class="btn btn-default btn-sm">
+              <i class="fas fa-home"></i> Retour accueil
+            </button></a>                
+        </div> 
+    </div>             
+    <div class="mt-5 text-center">
+        <div class="display-4 text-primary">
+            GesDiploma Admin
+        </div>
+    </div>
+    <div id="content-wrapper" class="d-flex flex-column">
+        <div id="content">
+            <div class="container-fluid pb-10">
+                <div class="row mt-5">
+                    <div class="col-xl-12 col-lg-12">
+                        <div class="card shadow mb-4">
+                            <div class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
+                                <h6 class="m-0 font-weight-bold text-primary">Ajout d'étudiants certifiés</h6>
+                            </div>
+                            <div class="container">
+                                <div class="card-body">
+                                    <div class="row">
+                                            <div class="col-6">
+                                                <div class="form-group">
+                                                    <input type="file" id="files" accept=".csv"
+                                                        required />
+                                                </div>
+                                            </div>
+                                            <div class="col-6">
+                                                <div class="form-group text-right">
+                                                    <button type="submit" id="submit-file"
+                                                        class="btn btn-primary">Envoyer les fichiers</button>
+                                                </div>
+                                            </div>
+                                            <div class="col-12" id="response"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="sticky-footer bg-white">
+        <div class="container my-auto">
+            <div class="copyright text-center my-auto">
+                <span>Copyright &copy; ESGI 2019</span>
+            </div>
+        </div>
+    </footer>
+    <!-- End of Footer -->
+
+</body>
+</html>

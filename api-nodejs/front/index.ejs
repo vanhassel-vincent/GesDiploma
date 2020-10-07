@@ -1,0 +1,135 @@
+<html>
+<head>
+
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>GesDiploma</title>
+    <link rel="shortcut icon" type="image/ico" href="./images/image.ico" />
+    <link href="./css/main.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/f962f21468.js"></script>
+    <script src="https://kit.fontawesome.com/490eefe7a5.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="./js/index.js"></script>
+
+</head>
+
+<body id="page-top">
+
+    <div id="wrapper">
+        <div id="content-wrapper" class="d-flex flex-column">
+            <div id="content">
+                <div class="container-fluid pb-10">
+                    <div class="row">
+                        <div class="col-xl-12 col-lg-12" >
+                            <br>
+                            <a href="/admin"><button type="button" class="btn btn-default btn-sm">
+                                <i class="fas fa-user-shield"></i> Espace admin 
+                            </button></a>                
+                        </div> 
+                    </div>                     
+                    <div class="mt-5 text-center text-primary">
+                        
+                        <div class="display-4">
+                            GesDiploma
+                        </div>
+                        <div class="text-center mt-4">
+                            <h5>
+                                Vérifier l'authenticité de votre diplôme sur bitcoin
+                            </h5>
+                        </div>
+                    </div>
+                    <div class="row mt-5">
+                        <div class="col-xl-12 col-lg-12">
+                            <div class="card shadow mb-4">
+                                <div
+                                    class="card-header py-3 d-flex flex-row align-items-center justify-content-between">
+                                    <h6 class="m-0 font-weight-bold text-primary">Etudiants certifiés</h6>
+                                </div>
+                                <!-- Card Body -->
+                                <div class="card-body">
+                                    <div class="chart-area">
+                                        <div class="card-body">
+                                            <div class="table-responsive">
+                                                <table class="table table-bordered" id="dataTable" width="100%" cellspacing="0">
+                                                    <thead>
+                                                        <tr>
+                                                            <th class="text-center w-35">Nom</th>
+                                                            <th class="text-center w-35">Prénom</th>
+                                                            <th class="text-center">Filière</th>
+                                                            <th class="text-center">Diplôme</th>
+                                                            <th class="text-center">Promotion</th>
+                                                        </tr>
+                                                    </thead>
+                                                    <tbody>
+                                                        <form>
+                                                            <tr>
+                                                                <th class="text-center"><input type="text" class="form-control" id="name" placeholder="Nom"></th>
+                                                                <th class="text-center"><input type="text" class="form-control" id="firstName" placeholder="Prénom"></th>
+                                                                <th class="text-center">
+                                                                    <select class="form-control" id="filiaire">
+                                                                        <option>AL</option>
+                                                                        <option>MOC</option>
+                                                                        <option>IBD</option>
+                                                                        <option>IBC</option>
+                                                                        <option>IW</option>
+                                                                        <option>IJV</option>
+                                                                        <option>SRC</option>
+                                                                        <option>SI</option>
+                                                                        <option>MCSI</option>
+                                                                    </select>
+                                                                </th>
+                                                                <th class="text-center">
+                                                                    <select class="form-control" id="diplome">
+                                                                        <option>License</option>
+                                                                        <option>Master</option>
+                                                                    </select>
+                                                                </th>
+                                                                <th class="text-center"><input type="number" class="form-control" id="promotion" placeholder="2020" value="2020" min=2020 max=2300></th>
+                                                            </tr>
+                                                        </form>
+                                                    </tbody>
+
+                                                     <!-- <tbody id="blockchain">
+                                                        
+                                                    </tbodyid> -->
+                                                </table>
+                                            </div>
+                                        </div>
+                                        <div class="card-body">
+                                            <div class="row">
+                                                <div class="col-12">
+                                                        <button type="button" class="btn btn-outline-primary btn-lg btn-block" onclick="checkPerson()">Vérifier</button>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div id="response"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- End of Main Content -->
+
+            <!-- Footer -->
+            <footer class="sticky-footer bg-white">
+                <div class="container my-auto">
+                    <div class="copyright text-center my-auto">
+                        <span>Copyright &copy; ESGI 2019</span>
+                    </div>
+                </div>
+            </footer>
+            <!-- End of Footer -->
+
+        </div>
+        <!-- End of Content Wrapper -->
+
+    </div>
+</body>
+
+</html>
